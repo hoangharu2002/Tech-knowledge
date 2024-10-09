@@ -18,7 +18,7 @@ Một số problem khi lập trình với Python:
 - Sử dụng @decorator để thay đổi hoặc mở rộng một hàm đã có mà không cần phải thay đổi code của nó. Một số decorator: @property, @classmethod, @staticmethod...
 - Những thực thi mang tính hệ thống nên được xử lý bên trong hàm main(), không nên được xử lý bên trong các hàm cục bộ.
 
-## Một số thư viện hỗ trợ của Python
+## Thư viện
 
 - 'Six'(?): thư viện hỗ trợ viết mã tương thích cho Python2 và Python3.
 - 'sys': thư viện liên kết với hệ thống.
@@ -30,16 +30,16 @@ Một số problem khi lập trình với Python:
 - 'pprint': module hỗ trợ việc in các cấu trúc dữ liệu phức tạp được gọn gàng và đẹp hơn.
 ** Chú thích: Dấu (*) thể hiện package được hỗ trợ bởi bên thứ ba. Dấu (?) thể hiện những package chưa được thử nghiệm.
 
-## Một số tool hỗ trợ
+## Tools
 
 - [pip](..\frameworks\pip.md): trình quản lý gói cho python, hỗ trợ cài đặt các gói từ PyPI (Python Package Index - một kho lưu trữ trực tuyến các gói phần mềm Python)
 
-## Một số hàm trong python
+## Basic functions
 
 - dir(): liệt kê các thành phần (thuộc tính, phương thức,...) của một module hoặc một đối tượng.
 - sorted(): sắp xếp lại các giá trị trong một đối tượng.
 
-## Một số đối tượng quan trọng trong python
+## Standar objects
 
 - 'capsys': đối tượng nhận các giá trị được xuất ra màn hình
 - '*args': đối tượng cho phép truyền số lượng đối số đơn lẻ chưa xác định
