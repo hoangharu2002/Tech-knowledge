@@ -1,6 +1,8 @@
 # Overview
 
-Guido van Rossum, 1991
+- Guido van Rossum
+- 1991
+- Python 2 -> Python 3
 
 - Chạy file script dưới dạng module: "python -m [filename]"
 - Tạo môi trường ảo: "python -m venv|virtualenv [virtual_folder_name]"
