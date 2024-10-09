@@ -11,7 +11,7 @@ Guido van Rossum, 1991
 ## Thư viện
 
 - 'Six'(?): thư viện hỗ trợ viết mã tương thích cho Python2 và Python3.
-- 'sys': thư viện liên kết với hệ thống.
+- 'sys': thư viện hệ thống.
 - 'argparse'(*): thư viện mạnh mẽ để xử lý các đối số dòng lệnh (command line).
 - 'pytest'(*): công cụ kiểm thử, thư viện hỗ trợ viết unit tests và kiểm soát exception.
 - 'mypy': công cụ kiểm tra các lỗi liên quan đến khai báo và sử dụng kiểu dữ liệu, thư viện cung cấp khả năng tạo các nhãn kiểu dữ liệu một cách linh hoạt.
