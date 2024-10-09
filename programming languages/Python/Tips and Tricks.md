@@ -1,6 +1,6 @@
 # There are a lot of tips and tricks for "Pythonista"
 
-## Optimize script
+## Optimize runtime
 
 1. Turn off unwanted warning in python (I mostly use while plotting)
 
@@ -20,3 +20,8 @@ warnings.filterwarnings("ignore")
 2. python --version : kiểm tra phiên bản python interpreter đang dùng
 
 3.
+
+## Scripting
+
+1. sys.version  : trả về phiên bản python hiện tại
+
