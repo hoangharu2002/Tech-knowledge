@@ -1,15 +1,6 @@
 # Overview
 
-Python hiện đang là một trong những ngôn ngữ lập trình phổ biến bậc nhất trên thế giới, được ứng dụng trong nhiều lĩnh vực.
-
-Python có hai phiên bản gồm Python2 và Python3:
-
-- Python2: đã cũ và có lẽ không còn được hỗ trợ, so với Python3 thì thiếu đi một số tính năng. Tuy nhiên vẫn còn được sử dụng phần lớn trong nhiều hệ thống cũ.
-- Python3: là phiên bản hiện đại hơn và đang được sử dụng.
-
-Môi trường ảo trong Python có chức năng giống như Sandbox, lập trình viên có thể cài đặt và làm việc tùy ý trong môi trường ảo mà không ảnh hưởng đến môi trường hệ thống. Hai công cụ tạo môi trường ảo phổ biến là 'venv' và 'virtualenv'. 'venv' tạo môi trường ảo với các tính năng cơ bản, đơn giản và được cài đặt sẵn cùng với python. 'virtualenv' là một công cụ của bên thứ ba nên cần được cài đặt thông qua 'pip', có nhiều tính năng hơn và khả năng tương thích tốt hơn với nhiều phiên bản python.
-
-Một số problem khi lập trình với Python:
+Guido van Rossum, 1991
 
 - Chạy file không có module 'site': "python -s [filename]"
 - Chạy file script dưới dạng module: "python -m [filename]"
