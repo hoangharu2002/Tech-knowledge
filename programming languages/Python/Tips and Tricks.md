@@ -29,4 +29,5 @@ warnings.filterwarnings("ignore")
 
 3. `a, b, c = 1, 2, 3` : gán nhiều giá trị cho nhiều biến
 
-4
+4. `a = 1,` : tạo một tuple với 1 phần tử
+
