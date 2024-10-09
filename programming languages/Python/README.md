@@ -2,7 +2,6 @@
 
 Guido van Rossum, 1991
 
-- Chạy file không có module 'site': "python -s [filename]"
 - Chạy file script dưới dạng module: "python -m [filename]"
 - Tạo môi trường ảo: "python -m venv|virtualenv [virtual_folder_name]"
 - Hàm thoát 'exit()' trong python thường được thêm tự động bởi module 'site', trường hợp không dùng module 'site' hệ thống sẽ báo lỗi, sửa lỗi bằng cách "sys.exit()" hoặc "raise SystemExit()"
