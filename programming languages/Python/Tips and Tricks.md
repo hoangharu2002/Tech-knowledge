@@ -23,5 +23,10 @@ warnings.filterwarnings("ignore")
 
 ## Scripting
 
-1. sys.version  : trả về phiên bản python hiện tại
+1. `sys.version` : trả về phiên bản python hiện tại
 
+2. `a = b = c = 1` : gán một giá trị cho nhiều biến
+
+3. `a, b, c = 1, 2, 3` : gán nhiều giá trị cho nhiều biến
+
+4
