@@ -1,4 +1,4 @@
-# General
+# Overview
 
 Python hiện đang là một trong những ngôn ngữ lập trình phổ biến bậc nhất trên thế giới, được ứng dụng trong nhiều lĩnh vực.
 
@@ -11,7 +11,6 @@ Môi trường ảo trong Python có chức năng giống như Sandbox, lập tr
 
 Một số problem khi lập trình với Python:
 
-- Sử dụng trick "if __name__ == '__main__':" để kiểm soát việc chạy code dưới dạng Script và Module.
 - Chạy file không có module 'site': "python -s [filename]"
 - Chạy file script dưới dạng module: "python -m [filename]"
 - Tạo môi trường ảo: "python -m venv|virtualenv [virtual_folder_name]"
