@@ -14,3 +14,9 @@ warnings.filterwarnings("ignore")
 3. 
 
 ## Command Promt
+
+1. python -s [filename] : run python file without module `site`
+
+2. python --version : kiểm tra phiên bản python interpreter đang dùng
+
+3.
