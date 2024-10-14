@@ -19,7 +19,7 @@ warnings.filterwarnings("ignore")
 
 2. python --version : kiểm tra phiên bản python interpreter đang dùng
 
-3.
+3. python -m [filename] : thực thi file theo dạng module
 
 ## Scripting
 
