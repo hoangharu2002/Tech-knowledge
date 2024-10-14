@@ -30,6 +30,8 @@
 
 - dir(): liệt kê các thành phần (thuộc tính, phương thức,...) của một module hoặc một đối tượng.
 - sorted(): sắp xếp lại các giá trị trong một đối tượng.
+- type(): trả về kiểu dữ liệu của đối tượng
+- print(): hàm dùng để xuất output
 
 ## Standar objects
 
