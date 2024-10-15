@@ -4,6 +4,17 @@
 - 1991
 - Python 2 -> Python 3
 
+## Data types
+
+- Text type: `str`
+- Numeric types: `int`, `float`, `complex`
+- Sequence types: `list`, `tuple`, `range`
+- Mapping types: `dict`
+- Set types: `set`, `frozenset`
+- Boolean type: `bool`
+- Binary types: `bytes`, `bytearray`, `memoryview`
+- None types: `NoneType`
+
 - Chạy file script dưới dạng module: "python -m [filename]"
 - Tạo môi trường ảo: "python -m venv|virtualenv [virtual_folder_name]"
 - Hàm thoát 'exit()' trong python thường được thêm tự động bởi module 'site', trường hợp không dùng module 'site' hệ thống sẽ báo lỗi, sửa lỗi bằng cách "sys.exit()" hoặc "raise SystemExit()"
