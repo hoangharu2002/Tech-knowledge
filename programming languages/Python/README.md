@@ -7,6 +7,7 @@
 ## Data types
 
 - Text type: `str`
+    - Methods: upper(), lower(), strip(), replace(), split()
 - Numeric types: `int`, `float`, `complex`
 - Sequence types: `list`, `tuple`, `range`
 - Mapping types: `dict`
@@ -44,7 +45,6 @@
 - type(): trả về kiểu dữ liệu của đối tượng
 - print(): hàm dùng để xuất output
 - len(): trả về độ dài của một iterator
-
 
 ## Standar objects
 
