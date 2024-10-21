@@ -19,7 +19,7 @@ warnings.filterwarnings("ignore")
 
 2. python --version : kiểm tra phiên bản python interpreter đang dùng
 
-3. python -m [filename] : thực thi file theo dạng module
+3. python -m [filename] : thực thi file theo dạng modules
 
 ## Scripting
 
@@ -30,4 +30,6 @@ warnings.filterwarnings("ignore")
 3. `a, b, c = 1, 2, 3` : gán nhiều giá trị cho nhiều biến
 
 4. `a = 1,` : tạo một tuple với 1 phần tử
+
+5. use `in` to check if a string in a bigger string (ex: 'str' in 'string')
 
