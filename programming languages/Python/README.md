@@ -43,6 +43,8 @@
 - sorted(): sắp xếp lại các giá trị trong một đối tượng.
 - type(): trả về kiểu dữ liệu của đối tượng
 - print(): hàm dùng để xuất output
+- len(): trả về độ dài của một iterator
+
 
 ## Standar objects
 
