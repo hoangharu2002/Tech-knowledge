@@ -7,7 +7,7 @@
 ## Data types
 
 - Text type: `str`
-    - Methods: upper(), lower(), strip(), replace(), split()
+      - Methods: upper(), lower(), strip(), replace(), split()
 - Numeric types: `int`, `float`, `complex`
 - Sequence types: `list`, `tuple`, `range`
 - Mapping types: `dict`
