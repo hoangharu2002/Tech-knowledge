@@ -45,6 +45,8 @@
 - type(): trả về kiểu dữ liệu của đối tượng
 - print(): hàm dùng để xuất output
 - len(): trả về độ dài của một iterator
+- ord(): trả về giá trị ASCII của một ký tự
+- chr(): trả về ký tự tương ứng với mã ASCII
 
 ## Standar objects
 
