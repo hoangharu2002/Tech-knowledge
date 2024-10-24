@@ -53,3 +53,8 @@
 - 'capsys': đối tượng nhận các giá trị được xuất ra màn hình
 - '*args': đối tượng cho phép truyền số lượng đối số đơn lẻ chưa xác định
 - '**kwargs': đối tượng cho phép truyền số lượng đối số dạng key-value chưa xác định
+
+## Những ghi chép thú vị về python
+
+- Các đối tượng trong python có thể được phân loại thành 2 loại là mutable và immutable. Tuy nhiên sự phân loại này thiên về khía cạnh quan niệm của người thiết kế, không phải là sự phân loại về technique.
+- Khi gán một giá trị cho một biến, thực chất không phải là gán giá trị đó cho biến đó. Khi đó python sẽ tạo ra một đối tượng vùng nhớ để lưu trữ giá trị này, sau đó các biến được gán sẽ tham chiếu đến đối tượng này.
