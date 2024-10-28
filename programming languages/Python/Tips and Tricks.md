@@ -11,8 +11,6 @@ warnings.filterwarnings("ignore")
 
 2."if __name__ == '__main__':" for discard unwanted running-code when importing a file
 
-3.Sometimes, we can use list instead of string for string processing
-
 ## Command Promt
 
 1. python -s [filename] : run python file without module `site`
@@ -32,3 +30,7 @@ warnings.filterwarnings("ignore")
 4. `a = 1,` : tạo một tuple với 1 phần tử
 
 5. use `in` to check if a string in a bigger string (ex: 'str' in 'string')
+
+
+## Tips
+
