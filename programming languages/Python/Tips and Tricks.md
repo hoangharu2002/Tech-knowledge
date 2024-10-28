@@ -31,7 +31,6 @@ warnings.filterwarnings("ignore")
 
 5. use `in` to check if a string in a bigger string (ex: 'str' in 'string')
 
-
 ## Tips
 
 1. Chuỗi là một immutable object, vì vậy nên ưu tiên tạo một đối tượng chuỗi mới rồi thao tác trên đối tượng đó, sau đó trả về đối tượng này.
