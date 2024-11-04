@@ -33,6 +33,9 @@ warnings.filterwarnings("ignore")
 
 ## Tips
 
-1. Chuỗi là một immutable object, vì vậy nên ưu tiên tạo một đối tượng chuỗi mới rồi thao tác trên đối tượng đó, sau đó trả về đối tượng này.
+1. Với những immutable object, nên ưu tiên việc return về kết quả sau khi xử hàm.
 
 2. Có thể sử dụng danh sách thay thế cho chuỗi trong xử lý chuỗi
+
+3. Có thể sử dụng kĩ thuật biến cờ hiệu để kiểm soát truy cập đầu cuối
+
