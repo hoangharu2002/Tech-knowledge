@@ -3,6 +3,7 @@ class cl_str:
     # Phương thức khởi tạo
     def __init__(self, str_input):
         self.string = str_input
+
     # Clone lại phương thức upper() của lớp str
     def cl_upper(self):
         result = []
@@ -12,6 +13,7 @@ class cl_str:
             else:
                 result.append(char)
         return ''.join(result)
+    
     # Clone lại phương thức lower() của lớp str
     def cl_lower(self):
         result = []
