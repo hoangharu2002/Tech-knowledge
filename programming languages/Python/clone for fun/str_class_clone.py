@@ -1,3 +1,5 @@
+from io import StringIO
+
 class cl_Str:
 
     # Phương thức khởi tạo
@@ -6,14 +8,14 @@ class cl_Str:
 
     # Clone lại phương thức join() của lóp str
     def cl_join(self, iterator):
-        result = ''
+        result = StringIO()
         first = True
         for item in iterator:
             if first:
                 first = False
             else:
-                result += self.string
-            result += item
+                result.write(self.string)
+            result.write(item)
         return result
 
     # Clone lại phương thức upper() của lớp str
