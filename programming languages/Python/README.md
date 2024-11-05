@@ -7,9 +7,11 @@
 ## Data types
 
 - Text type: `str`
-      - Methods: upper(), lower(), strip(), replace(), split()
+      - Methods: upper(), lower(), strip(), replace(), split(), join()
 - Numeric types: `int`, `float`, `complex`
 - Sequence types: `list`, `tuple`, `range`
+      - `list`
+            - Methods: append()
 - Mapping types: `dict`
 - Set types: `set`, `frozenset`
 - Boolean type: `bool`
@@ -47,6 +49,8 @@
 - len(): trả về độ dài của một iterator
 - ord(): trả về giá trị ASCII của một ký tự
 - chr(): trả về ký tự tương ứng với mã ASCII
+- range():
+- enumerate():
 
 ## Standar objects
 
