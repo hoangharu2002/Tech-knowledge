@@ -16,7 +16,7 @@ class cl_Str:
             else:
                 result.write(self.string)
             result.write(item)
-        return result
+        return result.getvalue()
 
     # Clone lại phương thức upper() của lớp str
     def cl_upper(self):
