@@ -35,9 +35,10 @@ warnings.filterwarnings("ignore")
 
 1. Với những immutable object, nên ưu tiên việc return về kết quả sau khi xử hàm.
 
-2. Có thể sử dụng danh sách thay thế cho chuỗi trong xử lý chuỗi
+2. Có thể sử dụng danh sách thay thế cho chuỗi trong xử lý chuỗi.
 
-3. Có thể sử dụng kĩ thuật biến cờ hiệu để bỏ qua phần tử đầu tiên của một iterator
+3. Có thể sử dụng kĩ thuật biến cờ hiệu để bỏ qua phần tử đầu tiên của một iterator.
 
-4. Khi sử dụng mệnh đề if, nếu giá trị sử dụng là chân trị thì có thể sử dụng trực tiếp không cần phép so sánh nào
+4. Khi sử dụng mệnh đề if, nếu giá trị sử dụng là chân trị thì có thể sử dụng trực tiếp không cần phép so sánh nào.
 
+5. Có thể sử dụng đối tượng StringIO khi xử lý chuỗi có sử dụng việc nối chuỗi nhiều lần.
