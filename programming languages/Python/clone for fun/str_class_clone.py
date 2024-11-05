@@ -43,6 +43,8 @@ class cl_Str:
         if chars is None:
             chars = ' \t\n\r\x0b\x0c'   # gán cho chars tất cả các kí tự khoảng trắng
         
+        # Ý tưởng: tìm phần không bị cắt
+
         start = 0
         # tìm vị trí đầu của phần không cắt
         while start < len(self.string) and self.string[start] in chars:
