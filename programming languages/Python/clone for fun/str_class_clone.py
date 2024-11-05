@@ -56,10 +56,20 @@ class cl_Str:
             end -= 1
         
         return self.string[start:end + 1]
+    
+    # Clone lại phương thức replace() của lớp str
+    def cl_replace(self, old, new, count=-1):
+        result = []
+        for char in self.string:
+            if char == old:
+                result.append(new)
+            else:
+                result.append(char)
+        return ''.join(result)
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('  Hello  World!  ')
+    s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_strip())
+    print(s.cl_replace('l', 'L'))
     exit(0)
