@@ -1,8 +1,20 @@
-class cl_str:
+class cl_Str:
 
     # Phương thức khởi tạo
     def __init__(self, str_input):
         self.string = str_input
+
+    # Clone lại phương thức join() của lóp str
+    def cl_join(self, iterator):
+        result = ''
+        first = True
+        for item in iterator:
+            if first:
+                first = False
+            else:
+                result += self.string
+            result += item
+        return result
 
     # Clone lại phương thức upper() của lớp str
     def cl_upper(self):
@@ -21,11 +33,12 @@ class cl_str:
             if 'A' <= char <= 'Z':
                 result.append(chr(ord(char) + 32))
             else:
-                result.append(char)
+                result.append(char) 
         return ''.join(result)
 
 # Main function
 if __name__ == '__main__':
-    s = cl_str('Hello World!')
-    print(s.cl_lower())
+    #s = cl_str('Hello World!')
+    s = cl_Str('-')
+    print(s.cl_join(['Hello', 'World', '!']))
     exit(0)
