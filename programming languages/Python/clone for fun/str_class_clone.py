@@ -10,7 +10,7 @@ class cl_Str:
     """ Kỹ thuật:
     > StringIO - Intermediate
     > (Có thể) List thay String - Basic
-    > Cờ hiệu skip 1st - Basic
+    > Cờ hiệu 1 lần - Basic
     """
     def cl_join(self, iterator):
         result = StringIO()
@@ -24,6 +24,9 @@ class cl_Str:
         return result.getvalue()
 
     # Clone lại phương thức upper() của lớp str
+    """ Kỹ thuật:
+    > List thay String - Basic
+    """
     def cl_upper(self):
         result = []
         for char in self.string:
