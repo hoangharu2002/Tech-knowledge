@@ -7,6 +7,11 @@ class cl_Str:
         self.string = str_input
 
     # Clone lại phương thức join() của lóp str
+    """ Kỹ thuật:
+    > StringIO - Intermediate
+    > (Có thể) List thay String - Basic
+    > Cờ hiệu skip 1st - Basic
+    """
     def cl_join(self, iterator):
         result = StringIO()
         first = True
