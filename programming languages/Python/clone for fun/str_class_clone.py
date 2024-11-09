@@ -37,6 +37,9 @@ class cl_Str:
         return ''.join(result)
     
     # Clone lại phương thức lower() của lớp str
+    """ Kỹ thuật:
+    > List thay String - Basic
+    """
     def cl_lower(self):
         result = []
         for char in self.string:
