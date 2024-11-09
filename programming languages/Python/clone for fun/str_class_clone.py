@@ -50,6 +50,10 @@ class cl_Str:
         return ''.join(result)
     
     # Clone lại phương thức strip() của lớp str
+    """ Kỹ thuật:
+    > None cho tham số - Intermediate
+    > sử dụng string để lưu giá trị lọc - Intermediate
+    """
     def cl_strip(self, chars=None):
         if chars is None:
             chars = ' \t\n\r\x0b\x0c'   # gán cho chars tất cả các kí tự khoảng trắng
