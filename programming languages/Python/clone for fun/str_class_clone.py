@@ -74,14 +74,19 @@ class cl_Str:
     
     # Clone lại phương thức replace() của lớp str
     """ Kỹ thuật:
-    > 
+    > List thay String - Basic
+    > Slicing - Basic
     """
     def cl_replace(self, old, new, count=-1):
+        if old == '':
+            print("Không có chuỗi rồi sao mà tìm?")
+            return 1
         result = []
         index = 0
         while index < len(self.string):
-            if self.string[index:index + len(old)] == old:
+            if self.string[index:index + len(old)] == old and count != 0:
                 result.append(new)
+                count -= 1
                 index += len(old)
             else:
                 result.append(self.string[index])
@@ -92,5 +97,5 @@ class cl_Str:
 if __name__ == '__main__':
     s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_replace('ll', 'L'))
+    print(s.cl_replace('kk', 'L'))
     exit(0)
