@@ -43,7 +43,7 @@ warnings.filterwarnings("ignore")
 
 5. Có thể tối ưu hóa việc nối chuỗi bằng cách sử dụng StringIO hoặc phương thức join.
 
-6. Khi xây dựng hàm có tham số tùy chọn và giá trị mặc định nhiều, có thể xử lý bằng cách gán giá trị mặc định là `None`, sau đó gán lại các giá trị mặc định mong muốn. Mục đích là để code trở nên dễ đọc và rõ ràng hơn.
+6. Khi chỉ định giá trị cho tham số, với tham số là biến rời rạc thì dùng `None` để kiểm soát giá trị mặc định, với tham số là biến đếm thì mặc định `-1` để áp dụng cho toàn bộ.
 
 7. Nếu muốn tạo một tập hợp các lựa chọn cho việc kiểm tra hay chọn lọc, có thể sử dụng chuỗi thay cho danh sách để quản lý. (vd: `str = ' \t\n'` thay cho `list = [' ', '\t', '\n']`)
 
