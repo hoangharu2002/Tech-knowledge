@@ -53,6 +53,7 @@ class cl_Str:
     """ Kỹ thuật:
     > None cho tham số - Intermediate
     > sử dụng string để lưu giá trị lọc - Intermediate
+    > Hai vòng lặp
     """
     def cl_strip(self, chars=None):
         if chars is None:
@@ -76,6 +77,7 @@ class cl_Str:
     """ Kỹ thuật:
     > List thay String - Basic
     > Slicing - Basic
+    > Tìm chuỗi con
     """
     def cl_replace(self, old, new, count=-1):
         if old == '':
