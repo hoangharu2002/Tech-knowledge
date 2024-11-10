@@ -73,18 +73,24 @@ class cl_Str:
         return self.string[start:end + 1]
     
     # Clone lại phương thức replace() của lớp str
+    """ Kỹ thuật:
+    > 
+    """
     def cl_replace(self, old, new, count=-1):
         result = []
-        for char in self.string:
-            if char == old:
+        index = 0
+        while index < len(self.string):
+            if self.string[index:index + len(old)] == old:
                 result.append(new)
+                index += len(old)
             else:
-                result.append(char)
+                result.append(self.string[index])
+                index += 1
         return ''.join(result)
 
 # Main function
 if __name__ == '__main__':
     s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_replace('l', 'L'))
+    print(s.cl_replace('ll', 'L'))
     exit(0)
