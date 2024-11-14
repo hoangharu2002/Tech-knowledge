@@ -94,10 +94,42 @@ class cl_Str:
                 result.append(self.string[index])
                 index += 1
         return ''.join(result)
+    # Clone lại phương thức find() của lớp str
+    """ Kỹ thuật"
+
+    """
+    def cl_find(self, s, start=0, end=None):
+        if end is None:
+            end = len(self.string)
+        while start < end:
+            if self.string[start:start + len(s)] == s:
+                return start
+            else:
+                start += 1
+        return -1
+    # Clone lại phương thức split() của lớp str
+    """ Kỹ thuật:
+
+    """
+    def cl_split(self, sep=None, count=-1):
+        if sep is None:
+            sep = ' \t\n\r\x0b\x0c'
+        result = []
+        start = 0
+        end = 0
+        while end < len(self.string):
+            if self.string[end:end + len(sep)] == sep:
+                result.append(self.string[start:end])
+                end += len(sep)
+                start = end
+            else:
+                pass
+
+        
 
 # Main function
 if __name__ == '__main__':
     s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_replace('kk', 'L'))
+    print(s.cl_find('l'))
     exit(0)
