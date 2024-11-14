@@ -101,6 +101,7 @@ class cl_Str:
     def cl_find(self, s, start=0, end=None):
         if end is None:
             end = len(self.string)
+            
         while start < end:
             if self.string[start:start + len(s)] == s:
                 return start
