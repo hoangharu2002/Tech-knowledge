@@ -39,7 +39,7 @@ warnings.filterwarnings("ignore")
 
 3. Có thể sử dụng kĩ thuật biến cờ hiệu để bỏ qua phần tử đầu tiên của một iterator.
 
-4. Khi sử dụng mệnh đề if, nếu giá trị sử dụng là chân trị thì có thể sử dụng trực tiếp không cần phép so sánh nào.
+4. Khi sử dụng mệnh đề if, nếu giá trị sử dụng là chân trị hoặc muốn biết sự tồn tại thì có thể sử dụng trực tiếp không cần phép so sánh nào.
 
 5. Có thể tối ưu hóa việc nối chuỗi bằng cách sử dụng StringIO hoặc phương thức join.
 
