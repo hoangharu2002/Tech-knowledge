@@ -96,9 +96,12 @@ class cl_Str:
     > Tìm chuỗi con
     """
     def cl_replace(self, old, new, count=-1):
-        if not old:
+        if not old or len(old) > len(self.string):
             raise ValueError("Chuỗi cần thay không hợp lệ!")
         
+        if old == new or count == 0:
+            return self.string
+
         result = []
         index = 0
         while index < len(self.string):
@@ -158,5 +161,5 @@ class cl_Str:
 if __name__ == '__main__':
     s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_replace('ll', 'LL'))
+    print(s.cl_replace('', 'LL'))
     exit(0)
