@@ -101,7 +101,7 @@ class cl_Str:
     > Slicing
     """
     def cl_find(self, s, start=0, end=None):
-        if s == '' or s is None:
+        if not s:
             raise ValueError("Chuỗi con không hợp lệ!")
         
         if end is None:
@@ -136,5 +136,5 @@ class cl_Str:
 if __name__ == '__main__':
     s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_find(None))
+    print(s.cl_find('ll'))
     exit(0)
