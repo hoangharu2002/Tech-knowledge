@@ -106,9 +106,7 @@ class cl_Str:
 
         for i in range(start, end):
             if self.string[i:i + len(s)] == s:
-                return start
-            else:
-                start += 1
+                return i
         return -1
     
     # Clone lại phương thức split() của lớp str
