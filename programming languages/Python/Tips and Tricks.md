@@ -48,3 +48,5 @@ warnings.filterwarnings("ignore")
 7. Nếu muốn tạo một tập hợp các lựa chọn cho việc kiểm tra hay chọn lọc, có thể sử dụng chuỗi thay cho danh sách để quản lý. (vd: `str = ' \t\n'` thay cho `list = [' ', '\t', '\n']`)
 
 8. Sử dụng biến cờ hiệu để skip phần tử đầu tiên.
+
+9. Những điều kiện trả về cùng một kết quả có thể hợp nhất lại với nhau.
