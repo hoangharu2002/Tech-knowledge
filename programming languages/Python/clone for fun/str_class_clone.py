@@ -103,6 +103,7 @@ class cl_Str:
     def cl_find(self, s, start=0, end=None):
         if s == '' or s is None:
             raise ValueError("Chuỗi con không hợp lệ!")
+        
         if end is None:
             end = len(self.string)
 
