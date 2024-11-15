@@ -2,9 +2,13 @@ from io import StringIO
 
 class cl_Str:
 
+
     # Phương thức khởi tạo
     def __init__(self, str_input):
         self.string = str_input
+
+
+
 
     # Clone lại phương thức join() của lóp str
     """ Kỹ thuật:
@@ -22,6 +26,9 @@ class cl_Str:
                 result.write(self.string)
             result.write(item)
         return result.getvalue()
+    
+
+
 
     # Clone lại phương thức upper() của lớp str
     """ Kỹ thuật:
@@ -35,6 +42,9 @@ class cl_Str:
             else:
                 result.append(char)
         return ''.join(result)
+
+
+
     
     # Clone lại phương thức lower() của lớp str
     """ Kỹ thuật:
@@ -48,6 +58,9 @@ class cl_Str:
             else:
                 result.append(char) 
         return ''.join(result)
+    
+
+
     
     # Clone lại phương thức strip() của lớp str
     """ Kỹ thuật:
@@ -73,6 +86,9 @@ class cl_Str:
         
         return self.string[start:end + 1]
     
+    
+
+
     # Clone lại phương thức replace() của lớp str
     """ Kỹ thuật:
     > List thay String
@@ -80,12 +96,11 @@ class cl_Str:
     > Tìm chuỗi con
     """
     def cl_replace(self, old, new, count=-1):
-        if old == '':
-            print("Không có chuỗi rồi sao mà tìm?")
-            return 1
+        if not old:
+            raise ValueError("Chuỗi cần thay không hợp lệ!")
+        
         result = []
-        index = 0
-        while index < len(self.string):
+        for index in range(0, len(self.string)):
             if self.string[index:index + len(old)] == old and count != 0:
                 result.append(new)
                 count -= 1
@@ -95,6 +110,9 @@ class cl_Str:
                 index += 1
         return ''.join(result)
     
+
+
+
     # Clone lại phương thức find() của lớp str
     """ Kỹ thuật"
     > None cho tham số
@@ -111,6 +129,9 @@ class cl_Str:
             if self.string[i:i + len(s)] == s:
                 return i
         return -1
+    
+
+
     
     # Clone lại phương thức split() của lớp str
     """ Kỹ thuật:
@@ -136,5 +157,5 @@ class cl_Str:
 if __name__ == '__main__':
     s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_find('ll'))
+    print(s.cl_replace('ll', 'LL'))
     exit(0)
