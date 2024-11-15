@@ -8,9 +8,9 @@ class cl_Str:
 
     # Clone lại phương thức join() của lóp str
     """ Kỹ thuật:
-    > StringIO - Intermediate
-    > (Có thể) List thay String - Basic
-    > Cờ hiệu 1 lần - Basic
+    > StringIO
+    > (Có thể) List thay String
+    > Cờ hiệu 1 lần
     """
     def cl_join(self, iterator):
         result = StringIO()
@@ -25,7 +25,7 @@ class cl_Str:
 
     # Clone lại phương thức upper() của lớp str
     """ Kỹ thuật:
-    > List thay String - Basic
+    > List thay String
     """
     def cl_upper(self):
         result = []
@@ -38,7 +38,7 @@ class cl_Str:
     
     # Clone lại phương thức lower() của lớp str
     """ Kỹ thuật:
-    > List thay String - Basic
+    > List thay String
     """
     def cl_lower(self):
         result = []
@@ -51,8 +51,8 @@ class cl_Str:
     
     # Clone lại phương thức strip() của lớp str
     """ Kỹ thuật:
-    > None cho tham số - Intermediate
-    > sử dụng string để lưu giá trị lọc - Intermediate
+    > None cho tham số
+    > Sử dụng string để lưu giá trị lọc
     > Hai vòng lặp
     """
     def cl_strip(self, chars=None):
@@ -75,8 +75,8 @@ class cl_Str:
     
     # Clone lại phương thức replace() của lớp str
     """ Kỹ thuật:
-    > List thay String - Basic
-    > Slicing - Basic
+    > List thay String
+    > Slicing
     > Tìm chuỗi con
     """
     def cl_replace(self, old, new, count=-1):
@@ -94,20 +94,23 @@ class cl_Str:
                 result.append(self.string[index])
                 index += 1
         return ''.join(result)
+    
     # Clone lại phương thức find() của lớp str
     """ Kỹ thuật"
-
+    > None cho tham số
+    > Slicing
     """
     def cl_find(self, s, start=0, end=None):
         if end is None:
             end = len(self.string)
-            
-        while start < end:
-            if self.string[start:start + len(s)] == s:
+
+        for i in range(start, end):
+            if self.string[i:i + len(s)] == s:
                 return start
             else:
                 start += 1
         return -1
+    
     # Clone lại phương thức split() của lớp str
     """ Kỹ thuật:
 
