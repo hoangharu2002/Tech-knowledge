@@ -100,7 +100,8 @@ class cl_Str:
             raise ValueError("Chuỗi cần thay không hợp lệ!")
         
         result = []
-        for index in range(0, len(self.string)):
+        index = 0
+        while index < len(self.string):
             if self.string[index:index + len(old)] == old and count != 0:
                 result.append(new)
                 count -= 1
