@@ -66,7 +66,7 @@ class cl_Str:
     """ Kỹ thuật:
     > None cho tham số
     > Sử dụng string để lưu giá trị lọc
-    > Hai vòng lặp
+    > String filter
     """
     def cl_strip(self, chars=None):
         if chars is None:
@@ -93,7 +93,6 @@ class cl_Str:
     """ Kỹ thuật:
     > List thay String
     > Slicing
-    > Tìm chuỗi con
     """
     def cl_replace(self, old, new, count=-1):
         if not old or len(old) > len(self.string):
@@ -118,7 +117,7 @@ class cl_Str:
 
 
     # Clone lại phương thức find() của lớp str
-    """ Kỹ thuật"
+    """ Kỹ thuật:
     > None cho tham số
     > Slicing
     """
@@ -128,13 +127,33 @@ class cl_Str:
         
         if end is None:
             end = len(self.string)
-
+        
         for i in range(start, end - len(s) + 1):
             if self.string[i:i + len(s)] == s:
                 return i
         return -1
     
 
+
+
+    # Clone lại phương thức isspace() của lớp str:
+    """ Kỹ thuật:
+    > String filter
+    """
+    def cl_isspace(self):
+        if not self.string:
+            return False
+
+        isspace = True
+        whitespaces = ' \t\n\r\x0b\x0c'
+        for char in self.string:
+            if char not in whitespaces:
+                isspace = False
+                break
+        if isspace:
+            return True
+        else:
+            return False
 
     
     # Clone lại phương thức split() của lớp str
@@ -144,16 +163,15 @@ class cl_Str:
     def cl_split(self, sep=None, count=-1):
         if sep is None:
             sep = ' \t\n\r\x0b\x0c'
+        
         result = []
-        start = 0
-        end = 0
-        while end < len(self.string):
-            if self.string[end:end + len(sep)] == sep:
-                result.append(self.string[start:end])
-                end += len(sep)
-                start = end
-            else:
-                pass
+        lc = 0
+        for i in range(0, len(self.string)):
+            if self.string[i] in sep:
+                result.append(self.string[lc:i])
+                lc = i + 1
+        result.append(self.string[lc:])
+        return result
 
         
 
@@ -161,5 +179,5 @@ class cl_Str:
 if __name__ == '__main__':
     s = cl_Str('Hello World')
     # s = cl_Str('-')
-    print(s.cl_replace('', 'LL'))
+    print(s.cl_split('l '))
     exit(0)
