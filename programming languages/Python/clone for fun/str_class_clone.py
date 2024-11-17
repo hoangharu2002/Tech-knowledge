@@ -145,7 +145,7 @@ class cl_Str:
         if not self.string:
             return False
 
-        whitespaces = (' ', '\t', '\n', '\r', '\x0b', '\x0c')
+        whitespaces = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
         for char in self.string:
             if char not in whitespaces:
                 return False
@@ -153,7 +153,7 @@ class cl_Str:
 
     
 
-    
+
     # Clone lại phương thức split() của lớp str
     """ Kỹ thuật:
 
