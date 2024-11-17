@@ -144,7 +144,7 @@ class cl_Str:
         if not self.string:
             return False
 
-        whitespaces = ' \t\n\r\x0b\x0c'
+        whitespaces = (' ', '\t', '\n', '\r', '\x0b', '\x0c')
         for char in self.string:
             if char not in whitespaces:
                 return False
@@ -172,7 +172,7 @@ class cl_Str:
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('Hello World')
+    s = cl_Str(' ')
     # s = cl_Str('-')
-    print(s.cl_split('l '))
+    print(s.cl_isspace())
     exit(0)
