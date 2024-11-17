@@ -45,7 +45,7 @@ warnings.filterwarnings("ignore")
 
 6. Khi chỉ định giá trị cho tham số, với tham số là biến rời rạc thì dùng `None` để kiểm soát giá trị mặc định, với tham số là biến đếm thì mặc định `-1` để áp dụng cho toàn bộ.
 
-7. Nếu muốn tạo một tập hợp các lựa chọn cho việc kiểm tra hay chọn lọc, có thể sử dụng chuỗi thay cho danh sách để quản lý. (vd: `str = ' \t\n'` thay cho `list = [' ', '\t', '\n']`)
+7. Khi muốn tạo một đối tượng filter, có thể sử dụng tuple cho tối ưu.
 
 8. Sử dụng biến cờ hiệu để skip phần tử đầu tiên.
 
