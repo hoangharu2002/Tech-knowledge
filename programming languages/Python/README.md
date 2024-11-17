@@ -7,7 +7,7 @@
 ## Data types
 
 - Text type: `str`
-      - Methods: *upper()*, *lower()*, *strip()*, replace(), split(), *join()*, find()
+      - Methods: *upper()*, *lower()*, *strip()*, *replace()*, split(), *join()*, find()
 - Numeric types: `int`, `float`, `complex`
 - Sequence types: `list`, `tuple`, `range`
       - `list`
@@ -51,6 +51,7 @@
 - chr(): trả về ký tự tương ứng với mã ASCII
 - range():
 - enumerate():
+- all():
 
 ## Standar objects
 
