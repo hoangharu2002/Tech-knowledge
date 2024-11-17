@@ -152,6 +152,8 @@ class cl_Str:
         return True
 
     
+
+    
     # Clone lại phương thức split() của lớp str
     """ Kỹ thuật:
 
