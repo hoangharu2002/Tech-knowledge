@@ -144,16 +144,11 @@ class cl_Str:
         if not self.string:
             return False
 
-        isspace = True
         whitespaces = ' \t\n\r\x0b\x0c'
         for char in self.string:
             if char not in whitespaces:
-                isspace = False
-                break
-        if isspace:
-            return True
-        else:
-            return False
+                return False
+        return True
 
     
     # Clone lại phương thức split() của lớp str
