@@ -70,9 +70,10 @@ class cl_Str:
     """
     def cl_strip(self, chars=None):
         if chars is None:
-            chars = ' \t\n\r\x0b\x0c'   # gán cho chars tất cả các kí tự khoảng trắng
-        
-        # Ý tưởng: tìm phần không bị cắt
+            chars = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
+
+        if chars:
+            return self.string
 
         start = 0
         # tìm vị trí đầu của phần không cắt
@@ -172,7 +173,7 @@ class cl_Str:
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str(' ')
+    s = cl_Str('---Hello World---')
     # s = cl_Str('-')
-    print(s.cl_isspace())
+    print(s.cl_strip(''))
     exit(0)
