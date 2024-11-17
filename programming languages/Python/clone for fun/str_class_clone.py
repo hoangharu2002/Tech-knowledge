@@ -146,10 +146,7 @@ class cl_Str:
             return False
 
         whitespaces = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
-        for char in self.string:
-            if char not in whitespaces:
-                return False
-        return True
+        return all(char in whitespaces for char in self.string)
 
     
 
@@ -160,7 +157,7 @@ class cl_Str:
     """
     def cl_split(self, sep=None, count=-1):
         if sep is None:
-            sep = ' \t\n\r\x0b\x0c'
+            sep = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
         
         result = []
         lc = 0
@@ -175,7 +172,7 @@ class cl_Str:
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('---Hello World---')
+    s = cl_Str('  ')
     # s = cl_Str('-')
-    print(s.cl_strip(''))
+    print(s.cl_isspace())
     exit(0)
