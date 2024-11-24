@@ -51,4 +51,4 @@ warnings.filterwarnings("ignore")
 
 9. Những điều kiện trả về cùng một kết quả có thể hợp nhất lại với nhau.
 
-10. Sử dụng Generator Expression để tối ưu hóa code.
+10. Xem xét sử dụng Generator Expression để tối ưu câu lệnh lặp hoặc sử dụng kết hợp với hàm.
