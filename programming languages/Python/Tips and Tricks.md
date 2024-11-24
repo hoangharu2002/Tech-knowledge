@@ -50,3 +50,5 @@ warnings.filterwarnings("ignore")
 8. Sử dụng biến cờ hiệu để skip phần tử đầu tiên.
 
 9. Những điều kiện trả về cùng một kết quả có thể hợp nhất lại với nhau.
+
+10. Sử dụng Generator Expression để tối ưu hóa code.
