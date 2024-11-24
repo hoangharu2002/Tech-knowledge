@@ -66,7 +66,7 @@ class cl_Str:
     """ Kỹ thuật:
     > None cho tham số
     > Sử dụng string để lưu giá trị lọc
-    > String filter
+    > Filter
     """
     def cl_strip(self, chars=None):
         if chars is None:
@@ -133,13 +133,14 @@ class cl_Str:
             if self.string[i:i + len(s)] == s:
                 return i
         return -1
-    
+
 
 
 
     # Clone lại phương thức isspace() của lớp str:
     """ Kỹ thuật:
-    > String filter
+    > Filter
+    > 
     """
     def cl_isspace(self):
         if not self.string:
@@ -148,7 +149,7 @@ class cl_Str:
         whitespaces = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
         return all(char in whitespaces for char in self.string)
 
-    
+
 
 
     # Clone lại phương thức split() của lớp str
