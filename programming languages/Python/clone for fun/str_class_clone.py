@@ -140,7 +140,7 @@ class cl_Str:
     # Clone lại phương thức isspace() của lớp str:
     """ Kỹ thuật:
     > Filter
-    > 
+    > Generator Expression
     """
     def cl_isspace(self):
         if not self.string:
