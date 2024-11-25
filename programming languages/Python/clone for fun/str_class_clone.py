@@ -157,23 +157,41 @@ class cl_Str:
 
     """
     def cl_split(self, sep=None, count=-1):
-        if sep is None:
-            sep = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
-        
         result = []
-        lc = 0
-        for i in range(0, len(self.string)):
-            if self.string[i] in sep:
-                result.append(self.string[lc:i])
-                lc = i + 1
-        result.append(self.string[lc:])
+        buffer = []
+
+        if sep is None:
+            for char in self.string:
+                if char.isspace():
+                    result.append(''.join(buffer))
+                    buffer = []
+                else:
+                    buffer.append(char)
+            if buffer:
+                result.append(''.join(buffer))
+        else:
+            sep_len = len(sep)
+            string_len = len(self.string)
+            i = 0
+
+            while i < string_len:
+                if self.string[i:i + sep_len] == sep:
+                    result.append(''.join(buffer))
+                    buffer = []
+                    i += sep_len
+                else:
+                    buffer.append(self.string[i])
+                    i += 1
+            if buffer:
+                result.append(''.join(buffer))
+
         return result
 
         
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('  ')
+    s = cl_Str('Hello World1')
     # s = cl_Str('-')
-    print(s.cl_isspace())
+    print(s.cl_split('l'))
     exit(0)
