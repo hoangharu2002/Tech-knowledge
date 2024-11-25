@@ -31,6 +31,8 @@ warnings.filterwarnings("ignore")
 
 5. use `in` to check if a string in a bigger string (ex: 'str' in 'string')
 
+6. `f"This is {day} {month} {year}` : sử dụng placeholder để kết hợp giữa biến và bản tĩnh
+
 ## Tips
 
 1. Với những immutable object, nên ưu tiên việc return về kết quả sau khi xử hàm.
