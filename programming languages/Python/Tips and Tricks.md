@@ -52,3 +52,5 @@ warnings.filterwarnings("ignore")
 9. Những điều kiện trả về cùng một kết quả có thể hợp nhất lại với nhau.
 
 10. Xem xét sử dụng Generator Expression để tối ưu câu lệnh lặp hoặc sử dụng kết hợp với các hàm Aggregation.
+
+11. Hãy sử dụng str.isspace() để check kí tự khoảng trắng
