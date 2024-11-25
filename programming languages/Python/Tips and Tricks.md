@@ -54,3 +54,5 @@ warnings.filterwarnings("ignore")
 10. Xem xét sử dụng Generator Expression để tối ưu câu lệnh lặp hoặc sử dụng kết hợp với các hàm Aggregation.
 
 11. Hãy sử dụng str.isspace() để check kí tự khoảng trắng
+
+12. Hãy sử dụng buffer khi cần cắt chuỗi theo từng đoạn
