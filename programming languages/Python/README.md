@@ -7,7 +7,7 @@
 ## Data types
 
 - Text type: `str`
-      - Methods: *upper()*, *lower()*, *strip()*, *replace()*, split(), *join()*, find()
+      - Methods: *upper()*, *lower()*, *strip()*, *replace()*, *split()*, *join()*, *find()*
 - Numeric types: `int`, `float`, `complex`
 - Sequence types: `list`, `tuple`, `range`
       - `list`
