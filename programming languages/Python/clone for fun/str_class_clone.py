@@ -154,7 +154,8 @@ class cl_Str:
 
     # Clone lại phương thức split() của lớp str
     """ Kỹ thuật:
-
+    > buffer
+    > slicing
     """
     def cl_split(self, sep=None, count=-1):
         result = []
