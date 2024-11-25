@@ -8,5 +8,5 @@ s[2] = 'o'      # Không thể thay đổi giá trị. Báo lỗi "TypeError"
 ## 2. Thực hiện cộng trừ giữa chuỗi và số
 
 age = 36
-txt = "My name is J, I am " + age
+txt = "My name is J, I am " + age   # không thể thực hiện pháp tính cộng. Báo lỗi "TypeError"
 
