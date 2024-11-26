@@ -200,12 +200,25 @@ class cl_Str:
                 result.append(''.join(buffer))
 
         return result
+    
+
+
+
+    # Clone lại phương thức isalpha() của lớp str
+    """ Kỹ thuật:
+    > Generator Expression
+    """
+    def cl_isalpha(self):
+        if not self.string:
+            return False
+        
+        return all('a' <= char <= 'z' or 'A' <= char <= 'Z' for char in self.string)
 
         
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('Hello World1')
+    s = cl_Str('ПРИВЕТ')
     # s = cl_Str('-')
-    print(s.cl_split('l'))
+    print(s.cl_isupper())
     exit(0)
