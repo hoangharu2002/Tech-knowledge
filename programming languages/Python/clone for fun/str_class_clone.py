@@ -12,7 +12,7 @@ class cl_Str:
 
 
     # Clone lại phương thức join() của lóp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > StringIO
     > (Có thể) List thay String
     > Cờ hiệu 1 lần
@@ -32,7 +32,7 @@ class cl_Str:
 
 
     # Clone lại phương thức upper() của lớp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > List thay String
     """
     def cl_upper(self):
@@ -48,7 +48,7 @@ class cl_Str:
 
 
     # Clone lại phương thức isupper() của lớp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > Generator Expression
     """
     def cl_isupper(self):
@@ -61,7 +61,7 @@ class cl_Str:
 
     
     # Clone lại phương thức lower() của lớp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > List thay String
     """
     def cl_lower(self):
@@ -77,7 +77,7 @@ class cl_Str:
 
     
     # Clone lại phương thức strip() của lớp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > None cho tham số
     > Sử dụng string để lưu giá trị lọc
     > Filter
@@ -105,7 +105,7 @@ class cl_Str:
 
 
     # Clone lại phương thức replace() của lớp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > List thay String
     > Slicing
     """
@@ -132,7 +132,7 @@ class cl_Str:
 
 
     # Clone lại phương thức find() của lớp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > None cho tham số
     > Slicing
     """
@@ -152,7 +152,7 @@ class cl_Str:
 
 
     # Clone lại phương thức isspace() của lớp str:
-    """ Kỹ thuật:
+    """ Techiniques:
     > Filter
     > Generator Expression
     """
@@ -167,7 +167,7 @@ class cl_Str:
 
 
     # Clone lại phương thức split() của lớp str
-    """ Kỹ thuật:
+    """ Techiniques:
     > buffer
     > slicing
     """
@@ -206,7 +206,7 @@ class cl_Str:
 
 
     # Clone lại phương thức isalpha() của lớp str
-    """ Kỹ thuật:
+    """ Techniques:
     > Generator Expression
     """
     def cl_isalpha(self):
@@ -219,7 +219,7 @@ class cl_Str:
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('Привет')
+    s = cl_Str('Γειάσου')
     # s = cl_Str('-')
     print(s.cl_isalpha())
     exit(0)
