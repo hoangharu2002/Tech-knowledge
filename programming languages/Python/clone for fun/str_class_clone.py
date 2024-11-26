@@ -159,7 +159,25 @@ class cl_Str:
             if self.string[i:i + len(s)] == s:
                 return i
         return -1
+    
 
+
+
+    # Clone lại phương thức rfind() của lớp str
+    """ 
+
+    """
+    def cl_rfind(self, s, start=0, end=None):
+        if not s:
+            raise ValueError("Chuỗi cần tìm không hợp lệ!")
+        
+        if end is None:
+            end = len(self.string)
+
+        for i in range(end - len(s), start, -1):
+            if self.string[i:i + len(s)] == s:
+                return i
+        return -1
 
 
 
@@ -226,13 +244,18 @@ class cl_Str:
             return False
         
         return all(unicodedata.category(char).startswith("L") for char in self.string)
+    
+
+
+
+    # Clone 
 
 
 
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('Γειάσου')
+    s = cl_Str('Hello World!')
     # s = cl_Str('-')
-    print(s.cl_isalpha())
+    print(s.cl_rfind('l'))
     exit(0)
