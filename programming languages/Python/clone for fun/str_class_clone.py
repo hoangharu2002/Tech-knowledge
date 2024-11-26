@@ -42,6 +42,19 @@ class cl_Str:
             else:
                 result.append(char)
         return ''.join(result)
+    
+
+
+
+    # Clone lại phương thức isupper() của lớp str
+    """ Kỹ thuật:
+    > Generator Expression
+    """
+    def cl_isupper(self):
+        if not self.string:
+            return False
+
+        return all('A' <= char <= 'Z' for char in self.string)
 
 
 
