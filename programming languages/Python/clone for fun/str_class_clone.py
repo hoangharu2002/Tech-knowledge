@@ -215,7 +215,8 @@ class cl_Str:
         
         return all(unicodedata.category(char).startswith("L") for char in self.string)
 
-        
+
+
 
 # Main function
 if __name__ == '__main__':
