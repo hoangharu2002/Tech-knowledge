@@ -33,6 +33,8 @@ warnings.filterwarnings("ignore")
 
 6. `f"This is {day} {month} {year}` : sử dụng placeholder để kết hợp giữa biến và bản tĩnh
 
+7. `f"{Python:<10}"` : sử dụng modifier trong placeholder để định dạng đoạn văn bản. Những modifier bao gồm: `{:<}`, `{:>}`, `{:^}`, `{:d}`, `{:f}`, `{:.nf}`, `{:,}`, `{:b}`, `{:o}`, `{:x}`, `{:X}`, `{:.n}`, `{:.n%}`
+
 ## Tips
 
 1. Với những immutable object, nên ưu tiên việc return về kết quả sau khi xử hàm.
