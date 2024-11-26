@@ -1,4 +1,5 @@
 from io import StringIO
+import unicodedata
 
 class cl_Str:
 
@@ -212,13 +213,13 @@ class cl_Str:
         if not self.string:
             return False
         
-        return all('a' <= char <= 'z' or 'A' <= char <= 'Z' for char in self.string)
+        return all(unicodedata.category(char).startswith("L") for char in self.string)
 
         
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('ПРИВЕТ')
+    s = cl_Str('Привет')
     # s = cl_Str('-')
-    print(s.cl_isupper())
+    print(s.cl_isalpha())
     exit(0)
