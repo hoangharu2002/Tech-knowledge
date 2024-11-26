@@ -59,6 +59,18 @@ class cl_Str:
 
 
 
+
+    # Clone lại phương thức islower() của lớp str
+    """ Techniques:
+    > Generator Expression
+    """
+    def cl_islower(self):
+        if not self.string:
+            return False
+        
+        return all(unicodedata.category(char) == 'Ll' for char in self.string)
+
+
     
     # Clone lại phương thức lower() của lớp str
     """ Techiniques:
