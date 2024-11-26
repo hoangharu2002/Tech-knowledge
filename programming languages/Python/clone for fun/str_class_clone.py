@@ -55,7 +55,7 @@ class cl_Str:
         if not self.string:
             return False
 
-        return all('A' <= char <= 'Z' for char in self.string)
+        return all(unicodedata.category(char) == 'Lu' for char in self.string)
 
 
 
