@@ -110,6 +110,7 @@ class cl_Str:
     """ Techniques
     > Giá trị mặc nhiên None
     > Slicing
+    > Filter
     """
     def cl_lstrip(self, chars=None):
         if chars is None:
