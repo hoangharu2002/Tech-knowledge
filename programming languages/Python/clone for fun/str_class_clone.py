@@ -67,18 +67,13 @@ class cl_Str:
 
 
     
+
     # Clone lại phương thức lower() của lớp str
     """ Techiniques:
     > List thay String
     """
     def cl_lower(self):
-        result = []
-        for char in self.string:
-            if 'A' <= char <= 'Z':
-                result.append(chr(ord(char) + 32))
-            else:
-                result.append(char) 
-        return ''.join(result)
+        return ''.join(chr(ord(char) + 32) if 'A' <= char <= 'Z' else char for char in self.string)
     
 
 
