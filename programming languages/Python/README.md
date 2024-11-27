@@ -53,6 +53,8 @@
 - range():
 - enumerate():
 - all():
+- list(): chuyển đối tượng sang list
+- map():
 
 ## Standar objects
 
