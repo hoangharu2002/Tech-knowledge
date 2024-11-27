@@ -168,18 +168,23 @@ class cl_Str:
 
     """
     def cl_rfind(self, s, start=0, end=None):
+        # Kiểm tra chuỗi cần tìm có tồn tại không
         if s is None:
             raise ValueError("Chuỗi cần tìm không hợp lệ!")
         
+        # Kiểm tra và cài đặt giá trị mặc định cho `end`
         if end is None:
             end = len(self.string)
 
+        # Xử lý nếu `start`` và `end`` là số âm
         start = max(0, len(self.string) + start) if start < 0 else start
         end = max(0, len(self.string) + end) if start < 0 else end
 
+        # Kiểm tra nếu chuỗi cần tìm rỗng
         if not s:
             return end
 
+        # Lặp qua từng vị trí để tìm chuỗi
         for i in range(end - len(s), start - 1, -1):
             if self.string[i:i + len(s)] == s:
                 return i
