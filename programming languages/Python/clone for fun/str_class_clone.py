@@ -33,7 +33,8 @@ class cl_Str:
 
     # Clone lại phương thức upper() của lớp str
     """ Techiniques:
-    > List thay String
+    > Generator Expression
+    > Tenary Operator
     """
     def cl_upper(self):
         return ''.join(chr(ord(char) - 32) if 'a' <= char <= 'z' else char for char in self.string)
@@ -166,7 +167,7 @@ class cl_Str:
     # Clone lại phương thức rfind() của lớp str
     """ Techiniques
     > Slicing
-    > Tenary Operator
+    > Ternary Operator
     """
     def cl_rfind(self, s, start=0, end=None):
         # Kiểm tra chuỗi cần tìm có tồn tại không
