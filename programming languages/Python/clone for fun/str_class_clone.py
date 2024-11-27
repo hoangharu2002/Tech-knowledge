@@ -174,7 +174,7 @@ class cl_Str:
         if end is None:
             end = len(self.string)
 
-        for i in range(end - len(s), start, -1):
+        for i in range(end - len(s), start - 1, -1):
             if self.string[i:i + len(s)] == s:
                 return i
         return -1
