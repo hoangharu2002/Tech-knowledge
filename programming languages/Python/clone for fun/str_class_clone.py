@@ -149,11 +149,17 @@ class cl_Str:
     > Slicing
     """
     def cl_find(self, s, start=0, end=None):
+        # Kiểm tra substring có tồn tại không
         if not s:
             raise ValueError("Chuỗi con không hợp lệ!")
         
+        # Kiểm tra và cài đặt giá trị mặc định cho `end`
         if end is None:
             end = len(self.string)
+
+        # Xử lý nếu `start` và `end` là số âm
+        start = max(0, len(self.string) + start) if start < 0 else start
+        end = max(0, len(self.string) + end) if start < 0 else end
         
         for i in range(start, end - len(s) + 1):
             if self.string[i:i + len(s)] == s:
