@@ -170,6 +170,9 @@ class cl_Str:
     def cl_rfind(self, s, start=0, end=None):
         if s is None:
             raise ValueError("Chuỗi cần tìm không hợp lệ!")
+        
+        if end is None:
+            end = len(self.string)
 
         if not s:
             return end
