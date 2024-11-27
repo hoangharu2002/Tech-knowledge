@@ -168,14 +168,17 @@ class cl_Str:
 
     """
     def cl_rfind(self, s, start=0, end=None):
-        if not s:
+        if s is None:
             raise ValueError("Chuỗi cần tìm không hợp lệ!")
         
         if end is None:
             end = len(self.string)
 
+        if not s:
+            return end
+
         for i in range(end - len(s), start - 1, -1):
-            if self.string[i:i + len(s)] == s:
+            if self.string[i:i + len(s)] == s and i > -1:
                 return i
         return -1
 
@@ -255,7 +258,7 @@ class cl_Str:
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('Hello World!')
+    s = cl_Str('hello')
     # s = cl_Str('-')
-    print(s.cl_rfind('l'))
+    print(s.cl_rfind('hello', 1))
     exit(0)
