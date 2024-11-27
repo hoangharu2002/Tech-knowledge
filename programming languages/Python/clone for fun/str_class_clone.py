@@ -129,7 +129,10 @@ class cl_Str:
 
 
     # Clone lại phương thức rstrip() của lớp str
-    """
+    """ Techniques:
+    > Slicing
+    > Giá trị mặc nhiên None
+    > Filter
     """
     def cl_rstrip(self, chars=None):
         if chars is None:
