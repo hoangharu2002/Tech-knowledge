@@ -116,16 +116,22 @@ class cl_Str:
         if chars is None:
             chars = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
         
-        if not chars:
-            return self.string
-        
-        start = 0
-        while start < len(self.string) and self.string[start] in chars:
-            start += 1
+            start = 0
+            while start < len(self.string) and self.string[start] in chars:
+                start += 1
 
-        return self.string[start:]
-    
-    
+            return self.string[start:]
+        else:
+            if not chars:
+                return self.string
+            
+            start = 0
+            while start < len(self.string) - len(chars) + 1 and self.string[start:start + len(chars)] == chars:
+                start += len(chars)
+
+            return self.string[start:]
+
+
 
 
     # Clone lại phương thức replace() của lớp str
@@ -285,7 +291,7 @@ class cl_Str:
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('hello')
+    s = cl_Str('32145Hello123')
     # s = cl_Str('-')
-    print(s.cl_rfind('hello', 1))
+    print(s.cl_lstrip('123'))
     exit(0)
