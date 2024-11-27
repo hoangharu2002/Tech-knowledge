@@ -103,6 +103,27 @@ class cl_Str:
         
         return self.string[start:end + 1]
     
+
+
+
+    # Clone lại phương thức lstrip() của lớp str
+    """ Techniques
+    > Giá trị mặc nhiên None
+    > Slicing
+    """
+    def cl_lstrip(self, chars=None):
+        if chars is None:
+            chars = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
+        
+        if not chars:
+            return self.string
+        
+        start = 0
+        while start < len(self.string) and self.string[start] in chars:
+            start += 1
+
+        return self.string[start:]
+    
     
 
 
