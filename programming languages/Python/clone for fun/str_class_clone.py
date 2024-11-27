@@ -174,11 +174,14 @@ class cl_Str:
         if end is None:
             end = len(self.string)
 
+        start = max(0, len(self.string) + start) if start < 0 else start
+        end = max(0, len(self.string) + end) if start < 0 else end
+
         if not s:
             return end
 
         for i in range(end - len(s), start - 1, -1):
-            if self.string[i:i + len(s)] == s and i > -1:
+            if self.string[i:i + len(s)] == s:
                 return i
         return -1
 
