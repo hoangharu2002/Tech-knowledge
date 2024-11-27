@@ -115,21 +115,15 @@ class cl_Str:
     def cl_lstrip(self, chars=None):
         if chars is None:
             chars = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
+
+        if not chars:
+            return self.string
         
-            start = 0
-            while start < len(self.string) and self.string[start] in chars:
-                start += 1
+        start = 0
+        while start < len(self.string) and self.string[start] in chars:
+            start += 1
 
-            return self.string[start:]
-        else:
-            if not chars:
-                return self.string
-            
-            start = 0
-            while start < len(self.string) - len(chars) + 1 and self.string[start:start + len(chars)] == chars:
-                start += len(chars)
-
-            return self.string[start:]
+        return self.string[start:]
 
 
 
@@ -291,7 +285,7 @@ class cl_Str:
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('32145Hello123')
+    s = cl_Str('abbaabbahello')
     # s = cl_Str('-')
-    print(s.cl_lstrip('123'))
+    print(s.cl_lstrip('ab'))
     exit(0)
