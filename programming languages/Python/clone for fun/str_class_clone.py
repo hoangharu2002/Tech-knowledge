@@ -172,7 +172,7 @@ class cl_Str:
     # Clone lại phương thức rfind() của lớp str
     """ Techiniques
     > Slicing
-    > Toán tử ba ngôi
+    > Tenary Operator
     """
     def cl_rfind(self, s, start=0, end=None):
         # Kiểm tra chuỗi cần tìm có tồn tại không
