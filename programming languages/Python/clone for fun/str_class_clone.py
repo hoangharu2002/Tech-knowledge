@@ -124,6 +124,25 @@ class cl_Str:
             start += 1
 
         return self.string[start:]
+    
+
+
+
+    # Clone lại phương thức rstrip() của lớp str
+    """
+    """
+    def cl_rstrip(self, chars=None):
+        if chars is None:
+            chars = {' ', '\t', '\n', '\r', '\x0b', '\x0c'}
+        
+        if not chars:
+            return self.string
+        
+        end = len(self.string) - 1
+        while end > -1 and self.string[end] in chars:
+            end -= 1
+
+        return self.string[0:end + 1]
 
 
 
