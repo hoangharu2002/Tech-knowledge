@@ -27,7 +27,7 @@ class cl_Str:
                 result.write(self.string)
             result.write(item)
         return result.getvalue()
-    
+
 
 
 
@@ -36,13 +36,7 @@ class cl_Str:
     > List thay String
     """
     def cl_upper(self):
-        result = []
-        for char in self.string:
-            if 'a' <= char <= 'z':
-                result.append(chr(ord(char) - 32))
-            else:
-                result.append(char)
-        return ''.join(result)
+        return ''.join(chr(ord(char) - 32) if 'a' <= char <= 'z' else char for char in self.string)
     
 
 
