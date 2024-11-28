@@ -80,9 +80,9 @@ class cl_Str:
     
     # Clone lại phương thức strip() của lớp str
     """ Techiniques:
-    > None cho tham số
-    > Sử dụng string để lưu giá trị lọc
-    > Filter
+    > Giá trị mặc nhiên None
+    > Slicing
+    > Filter với In
     """
     def cl_strip(self, chars=None):
         if chars is None:
@@ -107,7 +107,7 @@ class cl_Str:
 
 
     # Clone lại phương thức lstrip() của lớp str
-    """ Techniques
+    """ Techniques:
     > Giá trị mặc nhiên None
     > Slicing
     > Filter
