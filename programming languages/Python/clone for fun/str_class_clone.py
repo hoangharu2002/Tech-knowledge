@@ -254,7 +254,7 @@ class cl_Str:
     > slicing
     > Giá trị mặc nhiên None
     """
-    def cl_split(self, sep=None, count=-1):
+    def cl_split(self, sep=None, maxsplit=-1):
         result = []
         buffer = []
 
