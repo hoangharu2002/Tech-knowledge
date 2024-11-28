@@ -82,7 +82,7 @@ class cl_Str:
     """ Techiniques:
     > Giá trị mặc nhiên None
     > Slicing
-    > Filter với In
+    > Filter với in
     """
     def cl_strip(self, chars=None):
         if chars is None:
@@ -110,7 +110,7 @@ class cl_Str:
     """ Techniques:
     > Giá trị mặc nhiên None
     > Slicing
-    > Filter
+    > Filter với in
     """
     def cl_lstrip(self, chars=None):
         if chars is None:
@@ -132,7 +132,7 @@ class cl_Str:
     """ Techniques:
     > Slicing
     > Giá trị mặc nhiên None
-    > Filter
+    > Filter với in
     """
     def cl_rstrip(self, chars=None):
         if chars is None:
