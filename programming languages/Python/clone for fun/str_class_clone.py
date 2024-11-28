@@ -155,7 +155,7 @@ class cl_Str:
     > List thay String
     > Slicing
     """
-    def cl_replace(self, old, new, count=-1):
+    def cl_replace(self, old, new, count=-1, /):
         if old is None:
             raise TypeError("Chuỗi cần thay phải khác None")
         
@@ -164,6 +164,11 @@ class cl_Str:
         
         if old == new or count == 0:
             return self.string
+        
+        if not old:
+            if self.string:
+                return ''.join([new, self.string, new])
+            return new
 
         result = []
         index = 0
