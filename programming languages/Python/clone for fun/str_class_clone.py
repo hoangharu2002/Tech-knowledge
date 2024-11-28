@@ -252,6 +252,7 @@ class cl_Str:
     """ Techiniques:
     > buffer
     > slicing
+    > Giá trị mặc nhiên None
     """
     def cl_split(self, sep=None, count=-1):
         result = []
