@@ -156,19 +156,11 @@ class cl_Str:
     > Slicing
     """
     def cl_replace(self, old, new, count=-1, /):
-        if old is None:
-            raise TypeError("Chuỗi cần thay phải khác None")
-        
-        if len(old) > len(self.string):
-            raise ValueError("Chuỗi cần thay dài hơn chuỗi gốc!")
-        
         if old == new or count == 0:
             return self.string
         
         if not old:
-            if self.string:
-                return ''.join([new, self.string, new])
-            return new
+            return new + self.string + new if self.string else new
 
         result = []
         index = 0
