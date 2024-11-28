@@ -160,7 +160,7 @@ class cl_Str:
             return self.string
         
         if not old:
-            return new + self.string + new if self.string else new
+            return new + new.join(self.string) + new if self.string else new
 
         result = []
         index = 0
