@@ -60,3 +60,7 @@ warnings.filterwarnings("ignore")
 11. Hãy sử dụng str.isspace() để check kí tự khoảng trắng
 
 12. Hãy sử dụng buffer khi cần cắt chuỗi theo từng đoạn
+
+13. Generator Expression nên được sử dụng khi cần tạo một pipeline mà cần duyệt qua __từng phần tử__, sau đó xử lý và trả về giá trị của phần tử đó
+
+14. Ternary Operator nên được sử dụng khi mệnh đề if cần trả về giá trị và chức năng của từng mệnh đề if else là như nhau (cùng thực hiện một công việc)
