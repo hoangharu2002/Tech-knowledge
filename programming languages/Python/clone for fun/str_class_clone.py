@@ -260,9 +260,10 @@ class cl_Str:
 
         if sep is None:
             for char in self.string:
-                if char.isspace() and maxsplit != 0 and self.string[0] != char:
-                    result.append(''.join(buffer))
-                    buffer = []
+                if char.isspace() and maxsplit != 0:
+                    if self.string[0] != char:
+                        result.append(''.join(buffer))
+                        buffer = []
                     maxsplit -= 1
                 else:
                     buffer.append(char)
@@ -277,9 +278,10 @@ class cl_Str:
             i = 0
 
             while i < string_len:
-                if self.string[i:i + sep_len] == sep and maxsplit != 0 and i != 0:
-                    result.append(''.join(buffer))
-                    buffer = []
+                if self.string[i:i + sep_len] == sep and maxsplit != 0:
+                    if i != 0:
+                        result.append(''.join(buffer))
+                        buffer = []
                     maxsplit -= 1
                     i += sep_len
                 else:
