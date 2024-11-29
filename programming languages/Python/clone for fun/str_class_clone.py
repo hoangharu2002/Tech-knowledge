@@ -310,7 +310,6 @@ class cl_Str:
                     maxsplit -= 1
             result.insert(0, self.string[0:lc])
         else:   # Cắt chuỗi theo chuỗi con truyền vào
-            lc = len(self.string)
             i = lc - len(sep)
 
             while i >= 0 and maxsplit != 0:
