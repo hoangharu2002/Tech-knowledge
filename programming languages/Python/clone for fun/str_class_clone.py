@@ -258,6 +258,9 @@ class cl_Str:
         result = []
         buffer = []
 
+        if maxsplit == 0:
+            return result.append(self.string)
+
         if sep is None: # Cắt chuỗi theo ký tự khoảng trắng (mặc định)
             for i in range(0, len(self.string)):
                 if self.string[i].isspace() and maxsplit != 0:
@@ -271,7 +274,7 @@ class cl_Str:
                 result.append(''.join(buffer))
         else:   # Cắt chuỗi theo chuỗi con truyền vào
             if not sep:
-                return result.append(self.string)
+                return ValueError("Chuỗi cắt không có phần tử nào!")
             
             sep_len = len(sep)
             string_len = len(self.string)
