@@ -299,7 +299,10 @@ class cl_Str:
 
 
     # Clone lại phương thức rsplit() của lớp str
-    """
+    """ Techniques:
+    > Slicing
+    > `lc` parameter
+    > Giá trị mặc nhiên None
     """
     def cl_rsplit(self, sep=None, maxsplit=-1):
         result = []
