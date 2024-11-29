@@ -259,14 +259,14 @@ class cl_Str:
         buffer = []
 
         if sep is None:
-            for char in self.string:
-                if char.isspace() and maxsplit != 0:
-                    if self.string[0] != char:
+            for i in range(0, len(self.string)):
+                if self.string[i].isspace() and maxsplit != 0:
+                    if i != 0:
                         result.append(''.join(buffer))
                         buffer = []
                     maxsplit -= 1
                 else:
-                    buffer.append(char)
+                    buffer.append(self.string[i])
             if buffer:
                 result.append(''.join(buffer))
         else:
