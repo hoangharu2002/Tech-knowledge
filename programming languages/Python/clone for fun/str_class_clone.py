@@ -308,7 +308,7 @@ class cl_Str:
         if sep is None: # Cắt chuỗi theo ký tự khoảng trắng (mặc định)
             for i in range(len(self.string) - 1, -1, -1):
                 if self.string[i].isspace():  # Kiểm tra vị trí hiện tại có cắt hay không
-                    if i != lc:
+                    if i != len(self.string) - 1:
                         result.insert(0, self.string[i + 1:lc])
                     lc = i
                     maxsplit -= 1
@@ -324,14 +324,15 @@ class cl_Str:
 
             while i >= 0 and maxsplit != 0:
                 if self.string[i:i + len(sep)] == sep: # Kiểm tra vị trí hiện tại có cắt hay không
-                    if i != lc:
+                    if i != len(self.string) - 1:
                         result.insert(0, self.string[i + len(sep):lc])
                     lc = i
                     maxsplit -= 1
                     i -= len(sep)
                 else:
                     i -= 1
-            result.insert(0, self.string[0:lc])
+            if lc != 0:
+                result.insert(0, self.string[0:lc])
 
         return result
     
