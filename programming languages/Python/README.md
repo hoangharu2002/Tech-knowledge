@@ -11,7 +11,7 @@
 - Numeric types: `int`, `float`, `complex`
 - Sequence types: `list`, `tuple`, `range`
       - `list`
-            - Methods: append()
+            - Methods: append(), insert()
 - Mapping types: `dict`
 - Set types: `set`, `frozenset`
 - Boolean type: `bool`
