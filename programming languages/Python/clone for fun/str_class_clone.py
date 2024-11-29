@@ -262,7 +262,7 @@ class cl_Str:
             return result.append(self.string)
 
         if sep is None: # Cắt chuỗi theo ký tự khoảng trắng (mặc định)
-            for i in range(0, len(self.string)):
+            for i in range(0, len(self.string)):    # Duyệt qua từng vị trí trong chuỗi gốc
                 if self.string[i].isspace() and maxsplit != 0:
                     if i != 0:
                         result.append(''.join(buffer))
@@ -273,14 +273,14 @@ class cl_Str:
             if buffer:
                 result.append(''.join(buffer))
         else:   # Cắt chuỗi theo chuỗi con truyền vào
-            if not sep:
+            if not sep: # Trường hợp sep rỗng
                 return ValueError("Chuỗi cắt không có phần tử nào!")
             
             sep_len = len(sep)
             string_len = len(self.string)
             i = 0
 
-            while i < string_len:
+            while i < string_len:   # Duyệt qua từng vị trí trong chuỗi gốc
                 if self.string[i:i + sep_len] == sep and maxsplit != 0:
                     if i != 0:
                         result.append(''.join(buffer))
