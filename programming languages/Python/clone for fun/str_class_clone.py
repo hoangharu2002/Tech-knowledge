@@ -269,6 +269,9 @@ class cl_Str:
             if buffer:
                 result.append(''.join(buffer))
         else:
+            if not sep:
+                return result.append(self.string)
+            
             sep_len = len(sep)
             string_len = len(self.string)
             i = 0
@@ -277,12 +280,44 @@ class cl_Str:
                 if self.string[i:i + sep_len] == sep and maxsplit != 0:
                     result.append(''.join(buffer))
                     buffer = []
+                    maxsplit -= 1
                     i += sep_len
                 else:
                     buffer.append(self.string[i])
                     i += 1
             if buffer:
                 result.append(''.join(buffer))
+
+        return result
+    
+
+
+
+    # Clone lại phương thức rsplit() của lớp str
+    """
+    """
+    def cl_rsplit(self, sep=None, maxsplit=-1):
+        result = []
+        lc = len(self.string)   # Vị trị bị cắt gần nhất
+
+        if sep is None:
+            for i in range(len(self.string) - 1, -1, -1):
+                if self.string[i].isspace() and maxsplit != 0:  # Kiểm tra vị trí hiện tại có cắt hay không
+                    result.append(self.string[i + 1:lc])
+                    lc = i
+                    maxsplit -= 1
+            result.append(self.string[0:lc])
+        else:
+            lc = len(self.string)
+            i = lc - len(sep)
+
+            while i >= 0:
+                if self.string[i:i + len(sep)] == sep and maxsplit != 0: # Kiểm tra vị trí hiện tại có cắt hay không
+                    result.append(self.string[i + len(sep):lc])
+                    lc = i
+                    maxsplit -= 1
+                    i -= 1
+            result.append(self.string[0:lc])
 
         return result
     
