@@ -261,8 +261,9 @@ class cl_Str:
         if sep is None:
             for char in self.string:
                 if char.isspace() and maxsplit != 0:
-                    result.append(''.join(buffer))
-                    buffer = []
+                    if buffer:
+                        result.append(''.join(buffer))
+                        buffer = []
                     maxsplit -= 1
                 else:
                     buffer.append(char)
@@ -278,8 +279,9 @@ class cl_Str:
 
             while i < string_len:
                 if self.string[i:i + sep_len] == sep and maxsplit != 0:
-                    result.append(''.join(buffer))
-                    buffer = []
+                    if buffer:
+                        result.append(''.join(buffer))
+                        buffer = []
                     maxsplit -= 1
                     i += sep_len
                 else:
@@ -303,18 +305,24 @@ class cl_Str:
         if sep is None: # Cắt chuỗi theo ký tự khoảng trắng (mặc định)
             for i in range(len(self.string) - 1, -1, -1):
                 if self.string[i].isspace():  # Kiểm tra vị trí hiện tại có cắt hay không
-                    result.insert(0, self.string[i + 1:lc])
+                    if i != lc:
+                        result.insert(0, self.string[i + 1:lc])
                     lc = i
                     maxsplit -= 1
                 if maxsplit == 0:
                     break
-            result.insert(0, self.string[0:lc])
+            if lc != 0:
+                result.insert(0, self.string[0:lc])
         else:   # Cắt chuỗi theo chuỗi con truyền vào
+            if not sep:
+                return result.append(self.string)
+            
             i = lc - len(sep)
 
             while i >= 0 and maxsplit != 0:
                 if self.string[i:i + len(sep)] == sep: # Kiểm tra vị trí hiện tại có cắt hay không
-                    result.insert(0, self.string[i + len(sep):lc])
+                    if i != lc:
+                        result.insert(0, self.string[i + len(sep):lc])
                     lc = i
                     maxsplit -= 1
                     i -= len(sep)
@@ -349,5 +357,5 @@ class cl_Str:
 if __name__ == '__main__':
     s = cl_Str(' hello world ')
     # s = cl_Str('-')
-    print(s.cl_rsplit())
+    print(s.cl_split())
     exit(0)
