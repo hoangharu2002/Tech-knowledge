@@ -300,7 +300,7 @@ class cl_Str:
         result = []
         lc = len(self.string)   # Vị trị bị cắt gần nhất
 
-        if sep is None:
+        if sep is None: # Cắt chuỗi theo ký tự khoảng trắng (mặc định)
             for i in range(len(self.string) - 1, -1, -1):
                 if maxsplit == 0:
                     break
@@ -309,7 +309,7 @@ class cl_Str:
                     lc = i
                     maxsplit -= 1
             result.insert(0, self.string[0:lc])
-        else:
+        else:   # Cắt chuỗi theo chuỗi con truyền vào
             lc = len(self.string)
             i = lc - len(sep)
 
