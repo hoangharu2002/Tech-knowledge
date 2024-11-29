@@ -274,7 +274,7 @@ class cl_Str:
                 result.append(''.join(buffer))
         else:   # Cắt chuỗi theo chuỗi con truyền vào
             if not sep: # Trường hợp sep rỗng
-                return ValueError("Chuỗi cắt không có phần tử nào!")
+                return ValueError("Chuỗi cắt rỗng!")
             
             sep_len = len(sep)
             string_len = len(self.string)
@@ -318,7 +318,7 @@ class cl_Str:
                 result.insert(0, self.string[0:lc])
         else:   # Cắt chuỗi theo chuỗi con truyền vào
             if not sep:
-                return result.append(self.string)
+                raise ValueError("Chuỗi cắt rỗng")
             
             i = lc - len(sep)
 
