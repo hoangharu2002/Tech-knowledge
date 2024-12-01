@@ -34,8 +34,10 @@
 - 'site': module mặc định khi làm việc với python, được thêm vào tự động mỗi khi thực thi trong môi trường python bình thường, có chức năng thêm vào các cấu hình ban đầu cũng như thêm vào các hàm, thư viện... và set up đường dẫn tới các thư viện của hệ thống.
 - 'functools': module được tích hợp sẵn trong python, cung cấp các công cụ tiện ích cho việc xử lý và thao thác với các hàm.
 - 'pprint': module hỗ trợ việc in các cấu trúc dữ liệu phức tạp được gọn gàng và đẹp hơn.
-** Chú thích: Dấu (*) thể hiện package được hỗ trợ bởi bên thứ ba. Dấu (?) thể hiện những package chưa được thử nghiệm.
 - 'unicodedata': hỗ trợ mã unicode
+- 'math': thư viện hỗ trợ tính toán số học cơ bản đến trung bình, __không hỗ trợ__ tính tích phân hay đạo hàm.
+
+** Chú thích: Dấu (*) thể hiện package được hỗ trợ bởi bên thứ ba. Dấu (?) thể hiện những package chưa được thử nghiệm.
 
 ## Tools
 
