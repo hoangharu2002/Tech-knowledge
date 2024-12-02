@@ -7,7 +7,7 @@
 ## Data types
 
 - Text type: `str`
-      - Methods: *upper()*, *lower()*, *strip()*, *replace()*, *split()*, *join()*, *find()*, capitalize(), casefold(), center(), count(), encode(), endswith(), expandtabs(), format(), format_map(), index(), isalnum(), *isalpha()*, isascii(), isdecimal(), isdigit(), isidentifier(), *islower()*, isnumeric(), isprintable(), istitle(), *isupper()*, ljust(), *lstrip()*, maketrans(), partition(), *rfind()*, rindex(), rjust(), rpartition(), *rsplit()*, *rstrip()*, splitlines(), startswith(), swapcase(), title(), translate(), zfill(), *isspace()*
+      - Methods: *upper()*, *lower()*, *strip()*, *replace()*, *split()*, *join()*, *find()*, capitalize(), casefold(), center(), count(), encode(), endswith(), expandtabs(), format(), format_map(), index(), isalnum(), *isalpha()*, isascii(), isdecimal(), isdigit(), isidentifier(), *islower()*, isnumeric(), isprintable(), istitle(), *isupper()*, ljust(), *lstrip()*, maketrans(), partition(), *rfind()*, rindex(), rjust(), rpartition(), *rsplit()*, *rstrip()*, splitlines(), startswith(), swapcase(), title(), translate(), zfill(), *isspace()*.
 - Numeric types: `int`, `float`, `complex`
 - Sequence types: `list`, `tuple`, `range`
       - `list`
@@ -17,6 +17,7 @@
 - Boolean type: `bool`
 - Binary types: `bytes`, `bytearray`, `memoryview`
 - None types: `NoneType`
+- Numpy array: linspace(), arange()
 
 - Chạy file script dưới dạng module: "python -m [filename]"
 - Tạo môi trường ảo: "python -m venv|virtualenv [virtual_folder_name]"
