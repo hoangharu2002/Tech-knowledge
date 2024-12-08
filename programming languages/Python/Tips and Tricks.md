@@ -19,22 +19,6 @@ warnings.filterwarnings("ignore")
 
 3. python -m [filename] : thực thi file theo dạng modules
 
-## Scripting
-
-1. `sys.version` : trả về phiên bản python hiện tại
-
-2. `a = b = c = 1` : gán một giá trị cho nhiều biến
-
-3. `a, b, c = 1, 2, 3` : gán nhiều giá trị cho nhiều biến
-
-4. `a = 1,` : tạo một tuple với 1 phần tử
-
-5. use `in` to check if a string in a bigger string (ex: 'str' in 'string')
-
-6. `f"This is {day} {month} {year}` : sử dụng placeholder để kết hợp giữa biến và bản tĩnh
-
-7. `f"{Python:<10}"` : sử dụng modifier trong placeholder để định dạng đoạn văn bản. Những modifier bao gồm: `{:<}`, `{:>}`, `{:^}`, `{:d}`, `{:f}`, `{:.nf}`, `{:,}`, `{:b}`, `{:o}`, `{:x}`, `{:X}`, `{:.n}`, `{:.n%}`
-
 ## Tips
 
 1. Với những immutable object, nên ưu tiên việc return về kết quả sau khi xử hàm.
