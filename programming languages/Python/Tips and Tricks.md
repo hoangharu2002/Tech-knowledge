@@ -21,7 +21,7 @@ warnings.filterwarnings("ignore")
 
 ## Tips
 
-1. Với những immutable object, nên ưu tiên việc return về kết quả sau khi xử hàm.
+1. Với những immutable object, nên ưu tiên việc return về kết quả sau khi xử lý hàm.
 
 2. Có thể sử dụng danh sách thay thế cho chuỗi trong xử lý chuỗi.
 
