@@ -368,7 +368,8 @@ class cl_Str:
 
     # Clone lại phương thức swapcase() của lớp str
     """ Techniques:
-
+    > Ternary Operator
+    > Generator Expression
     """
     def cl_swapcase(self):
         return ''.join(char.lower() if char.isupper() else char.upper() for char in self.string)
