@@ -355,14 +355,20 @@ class cl_Str:
 
 
 
-    # Clone 
+    # Clone lại phương thức capitalize() của lớp str
+    """ Techniques:
+    > Slicing
+    > Concatenate
+    """
+    def cl_capitalize(self):
+        return self.string[0].upper() + self.string[1:].lower()
 
 
 
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str(' hello world ')
+    s = cl_Str('đây là tiếng việt')
     # s = cl_Str('-')
-    print(s.cl_split())
+    print(s.cl_capitalize())
     exit(0)
