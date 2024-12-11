@@ -362,13 +362,23 @@ class cl_Str:
     """
     def cl_capitalize(self):
         return self.string[0].upper() + self.string[1:].lower()
+    
+
+
+
+    # Clone lại phương thức swapcase() của lớp str
+    """ Techniques:
+
+    """
+    def cl_swapcase(self):
+        return ''.join(char.lower() if char.isupper() else char.upper() for char in self.string)
 
 
 
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('đây là tiếng việt')
+    s = cl_Str('HeLLoo')
     # s = cl_Str('-')
-    print(s.cl_capitalize())
+    print(s.cl_swapcase())
     exit(0)
