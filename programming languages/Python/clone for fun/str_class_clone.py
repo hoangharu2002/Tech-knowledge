@@ -433,7 +433,9 @@ class cl_Str:
 
 
     # Clone lại phương thức count() của lớp str
-    """
+    """ Techniques:
+    > Ternary Operator
+    > Slicing
     """
     def cl_count(self, s, start=0, end=None):
         if s is None:
