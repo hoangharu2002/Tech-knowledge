@@ -373,7 +373,32 @@ class cl_Str:
     """
     def cl_swapcase(self):
         return ''.join(char.lower() if char.isupper() else char.upper() for char in self.string)
+    
 
+
+
+    # Clone lại phương thức index() của lớp str
+    """ Techniques:
+    """
+    def cl_index(self, s, start=0, end=None):
+
+        if s is None:
+            raise ValueError("Chuỗi con không hợp lệ!")
+        
+        if s == '':
+            return 0
+        
+        if end is None:
+            end = len(self.string)
+
+        start = max(0, len(self.string) + start) if start < 0 else start
+        end = max(0, len(self.string) + end) if end < 0 else end
+
+        for i in range(end):
+            if self.string[i:i + len(s)] == s:
+                return i
+            
+        raise ValueError("Không tìm thấy chuỗi con!")
 
 
 
