@@ -428,6 +428,37 @@ class cl_Str:
                 return i
         
         raise ValueError("Không tìm thấy chuỗi con!")
+    
+
+
+
+    # Clone lại phương thức count() của lớp str
+    """
+    """
+    def cl_count(self, s, start=0, end=None):
+        if s is None:
+            raise ValueError("Chuỗi con không hợp lệ!")
+        
+        if s == '':
+            return len(self.string) + 1
+        
+        if end is None:
+            end = len(self.string)
+
+        start = max(0, len(self.string) + start) if start < 0 else start
+        end = max(0, len(self.string) + end) if end < 0 else end
+
+        count = 0
+        i = 0
+        while i <= end - len(s):
+            if self.string[i:i + len(s)] == s:
+                count += 1
+                i += len(s)
+            else:
+                i += 1
+        
+        return count
+
 
 
 
