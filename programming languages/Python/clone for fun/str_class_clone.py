@@ -401,12 +401,38 @@ class cl_Str:
                 return i
             
         raise ValueError("Không tìm thấy chuỗi con!")
+    
+
+
+
+    # Clone lại phương thức rindex() của lớp str
+    """
+    """
+    def cl_rindex(self, s, start=0, end=None):
+        if s is None:
+            raise ValueError("Chuỗi con không hợp lệ!")
+        
+        if s == '':
+            return len(self.string)
+        
+        if end is None:
+            end = len(self.string)
+
+        start = max(0, len(self.string) + start) if start < 0 else start
+        end = max(0, len(self.string) + end) if end < 0 else end
+
+        for i in range(end - len(s), start - 1, -1):
+            if self.string[i:i + len(s)] == s:
+                return i
+        
+        raise ValueError("Không tìm thấy chuỗi con!")
+
 
 
 
 # Main function
 if __name__ == '__main__':
-    s = cl_Str('HeLLoo')
+    s = cl_Str('hello world')
     # s = cl_Str('-')
-    print(s.cl_swapcase())
+    print(s.cl_rindex(''))
     exit(0)
