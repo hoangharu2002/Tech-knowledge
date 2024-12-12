@@ -396,7 +396,7 @@ class cl_Str:
         start = max(0, len(self.string) + start) if start < 0 else start
         end = max(0, len(self.string) + end) if end < 0 else end
 
-        for i in range(end):
+        for i in range(end - len(s)):
             if self.string[i:i + len(s)] == s:
                 return i
             
