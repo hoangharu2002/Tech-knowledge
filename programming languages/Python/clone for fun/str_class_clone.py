@@ -406,7 +406,9 @@ class cl_Str:
 
 
     # Clone lại phương thức rindex() của lớp str
-    """
+    """ Techniques:
+    > Ternary Operator
+    > Slicing
     """
     def cl_rindex(self, s, start=0, end=None):
         if s is None:
