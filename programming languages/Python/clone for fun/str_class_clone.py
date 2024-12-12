@@ -379,6 +379,8 @@ class cl_Str:
 
     # Clone lại phương thức index() của lớp str
     """ Techniques:
+    > Ternary Operator
+    > Slicing
     """
     def cl_index(self, s, start=0, end=None):
 
