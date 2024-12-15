@@ -381,6 +381,7 @@ class cl_Str:
     """ Techniques:
     > Ternary Operator
     > Slicing
+    > None parameter asignment
     """
     def cl_index(self, s, start=0, end=None):
 
