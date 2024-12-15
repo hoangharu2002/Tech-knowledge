@@ -38,6 +38,7 @@
 - 'unicodedata': hỗ trợ mã unicode
 - 'math': thư viện hỗ trợ tính toán số học cơ bản đến trung bình, __không hỗ trợ__ tính tích phân hay đạo hàm.
 - 'sympy': thư viện hỗ trợ tính toán và mô phỏng hàm.
+- 'spacy': thư viện hỗ trợ các xử lý trong NLP
 
 ** Chú thích: Dấu (*) thể hiện package được hỗ trợ bởi bên thứ ba. Dấu (?) thể hiện những package chưa được thử nghiệm.
 
