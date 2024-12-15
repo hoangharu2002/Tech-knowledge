@@ -436,6 +436,7 @@ class cl_Str:
     """ Techniques:
     > Ternary Operator
     > Slicing
+    > None parameter asignment
     """
     def cl_count(self, s, start=0, end=None):
         if s is None:
