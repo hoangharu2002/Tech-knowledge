@@ -460,7 +460,22 @@ class cl_Str:
                 i += 1
         
         return count
+    
 
+
+
+    # Clone lại phương thức startswith() của lớp str
+    """
+    """
+    def cl_startswith(self, prefix, start=0, end=None):
+        if end is None:
+            end = len(self.string)
+
+        start = max(0, len(self.string) + start) if start < 0 else start
+        end = max(0, len(self.string) + end) if end < 0 else end
+        
+        prefix = tuple(prefix)
+        return any(True if start + len(pre) <= end and self.string[start:start + len(pre)] == pre else False for pre in prefix)
 
 
 
