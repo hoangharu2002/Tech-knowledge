@@ -465,7 +465,10 @@ class cl_Str:
 
 
     # Clone lại phương thức startswith() của lớp str
-    """
+    """ Techniques:
+    > Ternary Operator
+    > Generator Operation
+    > None parameter asignment
     """
     def cl_startswith(self, prefix, start=0, end=None):
         if end is None:
